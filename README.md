@@ -73,19 +73,24 @@ Ensure your dataset is preprocessed to remove noise and align inputs with model 
 #### Legal-BERT
 Run the summarization training script:
 ```bash
-python train_bert_summarization.py
+python Legal_BERT_Summarization.ipynb
 ```
 
 #### Legal-Pegasus
 Run the summarization training script:
 ```bash
-python train_pegasus_summarization.py
+python Legal_Pegasus_Summarization_model_.ipynb
 ```
 
 ### Inference
 To generate summaries for new legal texts:
+- For Legal-BERT:
 ```bash
-python inference.py --model <bert|pegasus> --input_file <input_file_path> --output_file <output_file_path>
+python Legal_BERT_Summarization.ipynb --input_file <input_file_path> --output_file <output_file_path>
+```
+- For Legal-Pegasus:
+```bash
+python Legal_Pegasus_Summarization_model_.ipynb --input_file <input_file_path> --output_file <output_file_path>
 ```
 
 ## Results
@@ -96,4 +101,3 @@ This project demonstrates the capability of Legal-BERT and Legal-Pegasus to effe
 2. [Legal-Pegasus Pretrained Model](https://huggingface.co/nsi319/legal-pegasus)
 3. [Legal Case Document Summarization Dataset](https://www.kaggle.com/datasets/kageneko/legal-case-document-summarization)
 4. [Transformers Documentation](https://huggingface.co/transformers/)
-

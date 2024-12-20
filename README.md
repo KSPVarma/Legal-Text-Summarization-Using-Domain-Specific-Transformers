@@ -1,4 +1,4 @@
-# Legal Summarization Using Domain-Specific Transformers
+# Legal Text Summarization Using Domain-Specific Transformers
 
 ## Overview
 
